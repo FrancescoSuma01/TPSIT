@@ -1,0 +1,19 @@
+public void stampaDisco(String titolo, String cantante){
+
+        for (int i = 0; i < cd.size(); i++) {
+
+            if (CD.get(i).getTitolo() == titolo && CD.get(i).getCantante() == cantante) {
+                
+                System.out.println("Titolo: " + CD.get(i).getTitolo());
+                System.out.println("Cantante: " + CD.get(i).getCantante());
+                System.out.println("Numero di Tracce: " + CD.get(i).getNTracce());
+                System.out.println("Durata: " + CD.get(i).getDurata());
+                System.out.println("Quantità: " + CD.get(i).getQuantita());
+
+            }else{
+                System.out.println("Questo disco non è disponibile");
+            }
+
+        }
+
+}
